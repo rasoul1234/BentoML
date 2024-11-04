@@ -1,0 +1,12 @@
+# This file is used for building or packaging the whole project for deployment.
+
+service: "service.py:svc"
+labels:
+  owner: MRS-DATASCIENTIST
+  project: IRIS_DATASET
+include:
+  - "*.py"
+python:
+  packages:
+    - scikit-learn
+    - pandas
